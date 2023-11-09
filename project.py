@@ -104,12 +104,22 @@ euclidean_distances_matrix = calculator.calculate_batch_distances(distance_metri
 
 
 # Example Usage for On-the-Fly Execution
-user_input = "data science is amazing"
-closest_match, distance = calculator.find_closest_match(user_input, distance_metric='cosine')
-print(f"Closest Match: '{closest_match}' | Distance: {distance}")
+def main():
+    while True:
+        user_input = input("Enter a phrase (type 'exit' to quit): ")
+        
+        if user_input.lower() == 'exit':
+            break
 
+        closest_match, distance = calculator.find_closest_match(user_input, distance_metric='cosine')
+        
+        if closest_match:
+            print(f"Closest Match: {closest_match} | Distance: {distance}")
+        else:
+            print("No match found.")
 
-# In[ ]:
+if __name__ == '__main__':
+    main()
 
 
 
