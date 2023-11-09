@@ -88,8 +88,8 @@ class PhraseSimilarityCalculator:
 
 
 # Example Usage for Batch Execution
-word2vec_model_path = 'C:/Users/avina/Downloads/GoogleNews-vectors-negative300.bin'
-phrases_csv_path = 'C:/Users/avina/Downloads/phrases.csv'
+word2vec_model_path = 'GoogleNews-vectors-negative300.bin'
+phrases_csv_path = 'phrases.csv'
 
 
 # In[21]:
